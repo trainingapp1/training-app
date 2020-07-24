@@ -6,6 +6,9 @@ import ProductHero from './views/ProductHero';
 import ProductCategories from './views/ProductCategories';
 import { Typography,Button, Grid} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
+import CustomerService from './views/CustomerService';
+import 'react-slideshow-image/dist/styles.css';
+
 
 
 
@@ -16,6 +19,7 @@ function App() {
      <AppAppBar/>
      <ProductHero/>
      <ProductCategories/>
+     <CustomerService/>
      <AppFooter/>
     </div>
     

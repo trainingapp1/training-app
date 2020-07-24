@@ -1,18 +1,19 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import React from 'react';
 
-const backgroundImage = './images/exercise.png'
+const backgroundImage = 'https://wallpaperaccess.com/full/139118.jpg'
+
 
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
     backgroundColor: '#7fc7d9', // Average color of the background image.
     backgroundPosition: 'center',
-  },
+ },
   button: {
     minWidth: 200,
   },
@@ -27,6 +28,7 @@ const styles = (theme) => ({
     marginTop: theme.spacing(2),
   },
 });
+
 
 function ProductHero(props) {
   const { classes } = props;
@@ -55,6 +57,9 @@ function ProductHero(props) {
         Discover the experience
       </Typography>
     </ProductHeroLayout>
+
+
+
   );
 }
 
