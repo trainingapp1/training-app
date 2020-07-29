@@ -8,7 +8,7 @@ import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
 
 const styles = (theme) => ({
   title: {
-    fontSize: 24,
+    fontSize: 30,
   },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
@@ -31,9 +31,11 @@ const styles = (theme) => ({
     marginLeft: theme.spacing(3),
   },
   linkSecondary: {
-    color: theme.palette.secondary.main,
+    color: theme.palette.secondary.white,
   },
 });
+
+
 
 function AppAppBar(props) {
   const { classes } = props;
@@ -50,7 +52,7 @@ function AppAppBar(props) {
             className={classes.title}
             href="/premium-themes/onepirate/"
           >
-            {'Fitreh!'}
+            {'GetFit'}
           </Link>
           <div className={classes.right}>
             <Link
