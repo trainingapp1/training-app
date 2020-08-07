@@ -8,7 +8,7 @@ import { Typography,Button, Grid} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import CustomerService from './views/CustomerService';
 import 'react-slideshow-image/dist/styles.css';
-
+import Yoga from './MMHealth/Yoga';
 
 
 
@@ -16,6 +16,7 @@ function App() {
   
   return (
     <div>
+     
      <AppAppBar/>
      <ProductHero/>
      <ProductCategories/>

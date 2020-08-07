@@ -49,7 +49,8 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/training-app/my-app/signup"
+        href="/my-app/src/MMHealth/Yoga"
+        
       >
         Register
       </Button>
