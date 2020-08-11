@@ -5,6 +5,7 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import React from 'react';
 
+
 const backgroundImage = 'https://wallpaperaccess.com/full/139118.jpg'
 
 
@@ -49,8 +50,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/my-app/src/MMHealth/Yoga"
-        
+        Link to="../MMHealth/Yoga.jsx/"
       >
         Register
       </Button>
