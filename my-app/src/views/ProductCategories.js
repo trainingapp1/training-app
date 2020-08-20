@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-
+import { BrowserRouter as Router, Link as RouterLink, Switch, Route } from "react-router-dom";
 const styles = (theme) => ({
   root: {
     marginTop: theme.spacing(8),
@@ -93,7 +93,10 @@ function ProductCategories(props) {
         'https://i.pinimg.com/564x/73/16/32/731632e44bdf21489d4d7632e59a8894.jpg',
       title: 'GYM',
       width: '33%',
+      
     },
+    
+    
     {
       url:
         'https://www.safwallpapers.com/files/1524485537_Yoga-Girls-Wallpapers-For-Laptop.jpg',
