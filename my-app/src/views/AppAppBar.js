@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
-
+import { BrowserRouter as Router, Link as RouterLink, Switch, Route } from "react-router-dom";
 const styles = (theme) => ({
   title: {
     fontSize: 30,
+   
   },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
@@ -45,30 +46,30 @@ function AppAppBar(props) {
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
           <div className={classes.left} />
-          <Link
+          <Link  component={RouterLink}to='/Home'
             variant="h6"
             underline="none"
             color="inherit"
             className={classes.title}
-            href="/premium-themes/onepirate/"
+          
           >
             {'GetFit'}
           </Link>
           <div className={classes.right}>
-            <Link
+            <Link component={RouterLink}to='/Login'
               color="inherit"
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              href="/my-app/src/SignIn"
             >
               {'Sign In'}
             </Link>
-            <Link
+            <Link component={RouterLink}to='/Register'
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
+              href="/my-app/src/SignIn"
             >
               {'Sign Up'}
             </Link>

@@ -14,33 +14,26 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import About from './About';
 import Login from './Login';
 import Register from './Register';
-import Home from './Home';
 
 
-function App() {
+
+function Home() {
   
   return (
-    <Router>
-    <div className="App">
-    <AppAppBar/>
-    <Switch> 
-    <Route path="/Home" component={Home}  />
-    <Route path="/Login" component={Login}  />
-    <Route path="/Register" component={Register}  />
-
+    <div className="Home">
     <ProductHero/>
     <ProductCategories/>
     <CustomerService/>
     <AppFooter/>
-    </Switch>
+    
    </div>
   
-   </Router>
+  
    
   );
 }
 
 
 
-export default withRoot(App);
+export default withRoot(Home);
  
