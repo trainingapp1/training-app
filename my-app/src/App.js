@@ -29,9 +29,7 @@ function App() {
     <Route path="/Register" component={Register}  />
 
     <ProductHero/>
-    <ProductCategories/>
-    <CustomerService/>
-    <AppFooter/>
+
     </Switch>
    </div>
   
