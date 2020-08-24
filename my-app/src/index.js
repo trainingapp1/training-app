@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './component/auth/Login';
 import Home from './Home';
-import Covid from './Covid';
 
 ReactDOM.render(
   <React.StrictMode>
