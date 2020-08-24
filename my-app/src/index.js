@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './Login';
+import Login from './component/auth/Login';
 import Home from './Home';
 import Covid from './Covid';
 
