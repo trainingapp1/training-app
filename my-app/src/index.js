@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './Home';
-import AddWorkout from "./Admin/AddWorkout";
+import Covid from './Covid';
 
 ReactDOM.render(
   <React.StrictMode>
