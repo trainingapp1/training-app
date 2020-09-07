@@ -46,7 +46,7 @@ function AppAppBar(props) {
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
           <div className={classes.left} />
-          <Link  component={RouterLink}to='/Home'
+          <Link  component={RouterLink}to='/Covid'
             variant="h6"
             underline="none"
             color="inherit"

@@ -4,6 +4,7 @@ import Axios from "axios";
 import UserContext from "../../context/UserContext";
 import ErrorNotice from "../misc/ErrorNotice";
 import Home from "../../Home";
+import  "../../Login.css";
 
 
 export default function Login() {
@@ -27,21 +28,23 @@ export default function Login() {
         user: loginRes.data.user
       });
       localStorage.setItem("auth-token", loginRes.data.token);
-      history.push("/");
+      history.push("/Home");
     } catch (err) {
       err.response.data.msg && setError(err.response.data.msg);
     }
   };
 
   return (
-    <div className="regContainer">
-      <h2>Log in</h2>
+    <div className="login">
+    <div className="login_container">
+      <h1>Log in</h1>
       {error && (
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
       <form className="form" onSubmit={submit}>
         <label htmlFor="login-email">Email</label>
         <input
+        
           id="login-email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
@@ -53,8 +56,12 @@ export default function Login() {
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <input type="submit" value="Login"  />
+        <div className="login_button">
+        <input type="submit" className="login_SignInButton" value="Login"  />
+        </div>
+      <p > By Signing-in you agree to Get-Fit's conditions of use.</p>
       </form>
+    </div>
     </div>
   );
 }

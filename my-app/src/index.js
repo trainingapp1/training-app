@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './component/auth/Login';
+import Login from './authentication/auth/Login';
 import Home from './Home';
 import Covid from './Covid';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <Covid/>
   </React.StrictMode>,
   document.getElementById('root')
 );

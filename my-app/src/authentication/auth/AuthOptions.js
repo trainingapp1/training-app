@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import UserContext from "../../context/UserContext";
-
+import '../../style.css';
 export default function AuthOptions() {
   const { userData, setUserData } = useContext(UserContext);
 
@@ -20,6 +20,7 @@ export default function AuthOptions() {
     <nav className="btn">
       {userData.user ? (
         <button onClick={logout}>Log out</button>
+      
       ) : (
         <>
           <button onClick={register}>Register</button>

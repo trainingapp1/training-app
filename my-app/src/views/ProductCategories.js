@@ -129,8 +129,7 @@ function ProductCategories(props) {
     },
 
     {
-      url:
-        'https://mediad.publicbroadcasting.net/p/wsiu/files/styles/large/public/202004/CoronaVirusHeader-Final-3.jpg',
+      url:'https://mediad.publicbroadcasting.net/p/wsiu/files/styles/large/public/202004/CoronaVirusHeader-Final-3.jpg',
       title: 'COVID-19',
       height: '80%', 
       width: '99%',

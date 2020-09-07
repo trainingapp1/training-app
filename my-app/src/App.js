@@ -13,10 +13,11 @@ import ProductHeroLayout from './views/ProductHeroLayout';
 import Nav from './Nav';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import About from './About';
-import Home from "./component/pages/Home";
-import Login from "./component/auth/Login";
-import Register from "./component/auth/Register";
+import Home from "./authentication/pages/Home";
+import Login from "./authentication/auth/Login";
+import Register from "./authentication/auth/Register";
 import UserContext from './context/UserContext';
+import Covid from "./Covid";
 
 
 function App() {
@@ -54,10 +55,11 @@ function App() {
   return (
     <Router>
       <UserContext.Provider value={{userData,setUserData}}>
+       
     <div className="App">
-    <AppAppBar/>
+   <AppAppBar/>
     <Switch> 
-    <Route path="/Home" component={Home}  />
+    <Route path="/Covid" component={Covid}  />
     <Route path="/Login" component={Login}  />
     <Route path="/Register" component={Register}  />
      
@@ -66,7 +68,6 @@ function App() {
     </Switch>
    </div>
    </UserContext.Provider>
-  
    </Router>
    
   );

@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import Axios from "axios";
 import UserContext from "../../context/UserContext";
 import ErrorNotice from "../misc/ErrorNotice";
-
+import { FormControl, Select, MenuItem } from '@material-ui/core';
 export default function Register() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -36,8 +36,9 @@ export default function Register() {
   };
 
   return (
-    <div className="regContainer">
-      <h2>Register</h2>
+    <div className="register">
+    <div className="register_container">
+      <h1>Register</h1>
       {error && (
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
@@ -48,6 +49,7 @@ export default function Register() {
           type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
+
 
         <label htmlFor="register-password">Password</label>
         <input
@@ -69,9 +71,12 @@ export default function Register() {
           type="text"
           onChange={(e) => setDisplayName(e.target.value)}
         />
-
-        <input type="submit" value="Register" />
+         <div className="login_button">
+        <input className="login_SignInButton" type="submit" value="Register" />
+        </div>
+      <p>By Signing-in you agree to Get-Fit's conditions of use.</p>
       </form>
+    </div>
     </div>
   );
 }
