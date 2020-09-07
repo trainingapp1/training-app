@@ -17,7 +17,7 @@ import Home from "./authentication/pages/Home";
 import Login from "./authentication/auth/Login";
 import Register from "./authentication/auth/Register";
 import UserContext from './context/UserContext';
-import Covid from "./Covid";
+import Header from './authentication/layout/Header';
 
 
 function App() {
@@ -57,9 +57,9 @@ function App() {
       <UserContext.Provider value={{userData,setUserData}}>
        
     <div className="App">
-   <AppAppBar/>
+   <Header/>
     <Switch> 
-    <Route path="/Covid" component={Covid}  />
+    <Route path="/Home" component={Home}  />
     <Route path="/Login" component={Login}  />
     <Route path="/Register" component={Register}  />
      
